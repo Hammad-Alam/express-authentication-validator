@@ -1,5 +1,4 @@
 const rateLimit = require("express-rate-limit");
-const logger = require("./logger");
 
 const errorMessage = "Too many login attempts, please try again later.";
 
@@ -13,7 +12,9 @@ const loginRateLimiter = rateLimit({
       error: "Too many login attempts",
       message: errorMessage,
     });
-    logger.error(`Rate limiting exceeded for IP ${req.ip}`);
+
+    // Log the error using console.error
+    console.error(`Rate limiting exceeded for IP ${req.ip}`);
   },
 });
 

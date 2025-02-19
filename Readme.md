@@ -1,4 +1,4 @@
-# Express Auth Validator 🚀
+# Express Authentication Validator 🚀
 
 ### A lightweight, customizable middleware for **validating authentication inputs** in Express.js applications.
 

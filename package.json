@@ -1,6 +1,6 @@
 {
   "name": "express-authentication-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Express Authentication Validator is a middleware package for Node.js & Express.js that simplifies input validation for authentication routes (Register, Login, and Forgot Password). It ensures secure, structured, and reusable validation without requiring developers to write repetitive validation logic in every project.",
   "main": "index.js",
   "scripts": {
