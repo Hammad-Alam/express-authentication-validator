@@ -50,9 +50,9 @@ Want to override validation rules? Use custom rules like this:
 
 ```sh
 const express = require("express");
-const createValidator = require("express-auth-validator");
+const customValidator = require("express-auth-validator");
 
-const registerValidation = createValidator({
+const registerValidation = customValidator({
   name: { method: "notEmpty", args: [], message: "Name field is required" },
   email: { method: "isEmail", args: [], message: "Invalid email format" },
   password: { method: "isLength", args: [{ min: 8 }], message: "Password must be at least 8 characters" },
